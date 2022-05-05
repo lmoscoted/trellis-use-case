@@ -4,8 +4,6 @@ services:
   app:
     build:
       context: .
-    volumes:
-      - static_data:/vol/web
     environment:
       - SECRET_KEY
       - ALLOWED_HOSTS
@@ -13,12 +11,7 @@ services:
   proxy:
     build:
       context: ./proxy
-    volumes:
-      - static_data:/vol/static
     ports:
       - "8080:8080"
     depends_on:
       - app
-
-volumes:
-  static_data:

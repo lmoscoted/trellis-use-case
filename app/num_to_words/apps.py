@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class HelloWorldConfig(AppConfig):
-    name = 'hello_world'
+class NumToWordsConfig(AppConfig):
+    name = 'num_to_words'

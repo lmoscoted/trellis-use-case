@@ -16,7 +16,7 @@ class num2EnglishView(View):
         data = {}
         data['status'] = 'NOK'
         json_data = json.loads(request.body)
-        print('json data: ', json_data)
+
         try:
             number_string = json_data['number']
             number = int(number_string)
@@ -43,7 +43,6 @@ class num2EnglishView(View):
  
         if number_string == None or not number_string.isnumeric():
             data['error'] = 'number param is not present or is not valid'
-            print(number)
             return JsonResponse(data)
 
         number = int(number_string)

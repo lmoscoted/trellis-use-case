@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     # 'django.contrib.sessions',
     # 'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hello_world',
+    'num_to_words',
 ]
 
 MIDDLEWARE = [

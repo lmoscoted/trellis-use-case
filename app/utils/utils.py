@@ -1,8 +1,9 @@
 
 # Change this if a higher number need to be supported.
-GREATER_THAN_TENS = {100: 'hundred ', 1000: 'thousand '} #,
-                    # 1000000: 'million ', 1000000000: 'billion ', 10000000000000: 'trillion '}
+GREATER_THAN_TENS = {100: 'hundred ', 1000: 'thousand ',
+                     1000000: 'million ', 1000000000: 'billion ', 10000000000000: 'trillion '}
 MAX_NUMBER_SUPPORTED = 1000 * max([n for n in GREATER_THAN_TENS.keys()])
+
 
 def number_to_english(num):
 
